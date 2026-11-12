@@ -36,8 +36,8 @@ export default function Projects() {
           </div>
 
           <div className="projects-featured mt-12 grid items-center gap-8 lg:grid-cols-12">
-            <div className="lg:col-span-7"><ProjectCard p={featured} ratio="4/3" className="projects-featured-card" /></div>
-            <div className="lg:col-span-4 lg:col-start-9 lg:pl-3">
+            <div className="lg:col-span-7 projects-featured-card"><Img src={featured.cover.src} alt={featured.cover.alt} ratio="4/3" priority sizes="(min-width:1024px) 58vw, 100vw" /></div>
+            <div className="projects-featured-copy lg:col-span-4 lg:col-start-9 lg:pl-8">
               <p className="eyebrow">01 / {featured.category}</p>
               <h2 className="mt-4 font-serif text-4xl leading-tight">{featured.title}</h2>
               <p className="mt-4 leading-7 text-charcoal/70">{featured.brief}</p>
@@ -46,7 +46,7 @@ export default function Projects() {
           </div>
 
           <div className="projects-grid mt-24 grid gap-x-8 gap-y-16 sm:grid-cols-2">
-            {remaining.map((p, i) => <ProjectCard key={p.slug} p={p} ratio={i % 2 ? "4/3" : "4/5"} className={i % 2 ? "sm:mt-24" : ""} />)}
+            {remaining.map((p, i) => <ProjectCard key={p.slug} p={p} index={i + 2} showBrief ratio={i % 2 ? "4/3" : "4/5"} className={i % 2 ? "sm:mt-24" : ""} />)}
           </div>
         </div>
       </section>

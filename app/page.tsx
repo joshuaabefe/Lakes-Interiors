@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <section className="wrap hero-section">
         <div className="hero-copy">
-          <p className="hero-kicker">Interior design in Maryland, Lagos</p>
+          <p className="hero-kicker">Thoughtful interiors, made personal.</p>
           <h1 className="hero-title">A space to<br /><span>call your own.</span></h1>
           <p className="mt-6 max-w-md text-base leading-7 text-charcoal/70 sm:text-lg">Interior design, finishing and furnishing for homes and businesses, shaped around the way you live.</p>
           <div className="mt-8 flex flex-wrap items-center gap-4"><Button href="/contact">Discuss your space <ArrowRight size={15} aria-hidden /></Button><Link href="#studio-services" className="px-3 py-3 text-sm hover:text-[#806832]">Explore our services</Link></div>
