@@ -23,7 +23,7 @@ export default function Home() {
           <p className="hero-kicker">Thoughtful interiors, made personal.</p>
           <h1 className="hero-title">A space to<br /><span>call your own.</span></h1>
           <p className="mt-6 max-w-md text-base leading-7 text-charcoal/70 sm:text-lg">Interior design, finishing and furnishing for homes and businesses, shaped around the way you live.</p>
-          <div className="mt-8 flex flex-wrap items-center gap-4"><Button href="/contact">Discuss your space <ArrowRight size={15} aria-hidden /></Button><Link href="#studio-services" className="px-3 py-3 text-sm hover:text-[#806832]">Explore our services</Link></div>
+          <div className="mt-8 flex flex-wrap items-center gap-4"><div className="about-contact-button"><Button href="/contact">Discuss your space <ArrowRight size={15} aria-hidden /></Button></div><Link href="#studio-services" className="px-3 py-3 text-sm hover:text-[#806832]">Explore our services</Link></div>
           <a href="#services" className="hero-scroll mt-14 inline-flex items-center gap-3 text-xs uppercase tracking-[0.18em] text-charcoal/70"><span className="scroll-mark"><ArrowDown size={13} aria-hidden /></span>Scroll to explore</a>
         </div>
         <div className="hero-visual">
@@ -38,7 +38,7 @@ export default function Home() {
 
       <section className="section">
         <div className="wrap">
-          <div className="flex flex-wrap items-end justify-between gap-4"><SectionHeading eyebrow="Selected projects" title="Recent work" /><Link href="/projects" className="border-b border-gold pb-0.5 text-sm">All projects</Link></div>
+          <div className="flex flex-wrap items-end justify-between gap-4"><SectionHeading eyebrow="Selected projects" title="Recent work" /><Link href="/projects" className="text-link projects-all-link"><span>Explore all projects</span><ArrowRight size={16} aria-hidden /></Link></div>
           <div className="mt-12 grid gap-8 md:grid-cols-12">
             <ProjectCard p={projects[0]} ratio="4/5" className="md:col-span-7" />
             <div className="grid gap-8 md:col-span-5 md:pt-24">{projects.slice(1, 3).map(p => <ProjectCard key={p.slug} p={p} ratio="4/3" />)}</div>

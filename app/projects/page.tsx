@@ -19,7 +19,7 @@ export default function Projects() {
       <section className="projects-intro">
         <div className="wrap projects-intro-inner">
           <div className="max-w-2xl">
-            <p className="eyebrow">Selected spaces · Maryland, Lagos</p>
+            <p className="eyebrow">Spaces designed around you.</p>
             <h1 className="mt-5 font-serif text-6xl leading-[.98] tracking-[-.045em] sm:text-8xl">Considered from<br /><em className="font-normal text-[#8b8067]">every angle.</em></h1>
             <p className="mt-6 max-w-lg text-base leading-7 text-charcoal/70 sm:text-lg">A closer look at spaces shaped through thoughtful design, finishing and furnishing.</p>
             <Link href="#selected-projects" className="mt-9 inline-flex items-center gap-3 text-xs uppercase tracking-[0.18em] text-charcoal/70"><span className="scroll-mark"><ArrowDown size={13} aria-hidden /></span>Explore the projects</Link>
@@ -35,13 +35,13 @@ export default function Projects() {
             <p className="max-w-sm text-sm leading-6 text-charcoal/70">Explore residential and commercial interiors, with details on the design direction and services behind each space.</p>
           </div>
 
-          <div className="projects-featured mt-12 grid items-center gap-8 lg:grid-cols-12">
-            <div className="lg:col-span-7 projects-featured-card"><Img src={featured.cover.src} alt={featured.cover.alt} ratio="4/3" priority sizes="(min-width:1024px) 58vw, 100vw" /></div>
+          <div className="group projects-featured mt-12 grid items-center gap-8 lg:grid-cols-12">
+            <Link href={`/projects/${featured.slug}`} aria-label={`Explore ${featured.title}`} className="lg:col-span-7 projects-featured-card"><Img src={featured.cover.src} alt={featured.cover.alt} ratio="4/3" priority sizes="(min-width:1024px) 58vw, 100vw" /></Link>
             <div className="projects-featured-copy lg:col-span-4 lg:col-start-9 lg:pl-8">
               <p className="eyebrow">01 / {featured.category}</p>
               <h2 className="mt-4 font-serif text-4xl leading-tight">{featured.title}</h2>
               <p className="mt-4 leading-7 text-charcoal/70">{featured.brief}</p>
-              <Link href={`/projects/${featured.slug}`} className="text-link mt-7">Explore the project <ArrowRight size={15} aria-hidden /></Link>
+              <Link href={`/projects/${featured.slug}`} className="text-link project-link mt-7">Explore the project <ArrowRight size={15} aria-hidden /></Link>
             </div>
           </div>
 

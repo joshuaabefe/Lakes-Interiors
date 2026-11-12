@@ -24,7 +24,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         <Link href="/projects" className="inline-flex items-center gap-2 text-sm hover:text-[#806832]"><ArrowLeft size={14} aria-hidden /> All projects</Link>
         <div className="mt-10 grid items-end gap-6 md:grid-cols-12">
           <div className="md:col-span-8"><p className="eyebrow">{p.category}{p.location && ` · ${p.location}`}</p><h1 className="mt-3 text-5xl sm:text-7xl">{p.title}</h1></div>
-          <p className="eyebrow pb-2 md:col-span-3 md:col-start-10">Lakes Interiors<br />Maryland · Lagos</p>
+          <p className="eyebrow pb-2 md:col-span-3 md:col-start-10">Designed for living</p>
         </div>
         <div className="project-detail-hero mt-10"><Img src={p.gallery[0].src} alt={p.gallery[0].alt} ratio="16/8" priority sizes="100vw" /><span className="project-detail-index">{String(i + 1).padStart(2, "0")} / {String(projects.length).padStart(2, "0")}</span></div>
       </div>

@@ -16,7 +16,7 @@ export default function ServicesPage() {
       <section className="projects-intro">
         <div className="wrap projects-intro-inner">
           <div className="max-w-2xl">
-            <p className="eyebrow">Lakes Interiors · Maryland, Lagos</p>
+            <p className="eyebrow">Residential &amp; Commercial Interiors</p>
             <h1 className="mt-5 font-serif text-6xl leading-[.98] tracking-[-.045em] sm:text-8xl">Rooms shaped<br /><em className="font-normal text-[#8b8067]">around you.</em></h1>
             <p className="mt-6 max-w-lg text-base leading-7 text-charcoal/70 sm:text-lg">From an initial design direction to the finishing details, explore the ways we can help shape your space.</p>
             <Link href="#our-services" className="mt-9 inline-flex items-center gap-3 text-xs uppercase tracking-[0.18em] text-charcoal/70"><span className="scroll-mark"><ArrowDown size={13} aria-hidden /></span>Explore our services</Link>
@@ -39,7 +39,7 @@ export default function ServicesPage() {
               </div>
               <div className="mt-5 flex items-start justify-between gap-5 border-b border-charcoal/15 pb-5">
                 <div><h2 className="font-serif text-3xl">{service.title}</h2><p className="mt-2 max-w-lg text-sm leading-6 text-charcoal/70">{service.text}</p></div>
-                <span className="mt-1 inline-flex flex-none items-center gap-2 text-sm">Explore <ArrowRight size={15} aria-hidden /></span>
+                <span className="text-link project-link mt-1 inline-flex flex-none items-center gap-2">Explore <ArrowRight size={15} aria-hidden /></span>
               </div>
             </Link>)}
           </div>

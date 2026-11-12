@@ -33,7 +33,7 @@ export default function About() {
             <p>Lakes Interiors is an interior design studio based in Maryland, Lagos, Nigeria. We work across residential and commercial spaces, bringing design, finishing and furnishing together around the people who use each space.</p>
             <p>Our approach starts with listening: how you live or work, what needs to change, and what you want your space to feel like. From there, we develop a considered direction for the layout, materials and details.</p>
           </div>
-          <div className="mt-8"><Button href="/contact">Discuss a project <ArrowRight size={15} aria-hidden /></Button></div>
+          <div className="mt-8 about-contact-button"><Button href="/contact">Discuss a project <ArrowRight size={15} aria-hidden /></Button></div>
         </div>
         <div className="about-page-image lg:col-span-6 lg:col-start-7"><Img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85" alt="Naturally lit interior with neutral finishes" ratio="4/5" priority sizes="(min-width:1024px) 48vw, 100vw" /></div>
       </section>
@@ -72,7 +72,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="closing-section"><div className="wrap closing-inner"><p className="eyebrow text-ivory/65">Maryland, Lagos · Nigeria</p><h2 className="mt-6 max-w-3xl text-5xl sm:text-7xl">Let&apos;s make room for what matters.</h2><p className="mt-5 max-w-xl leading-7 text-ivory/70">Tell us what you are planning and we&apos;ll start with a conversation.</p><div className="mt-9"><Button href="/contact" variant="light">Get in touch <ArrowUpRight size={15} aria-hidden /></Button></div></div></section>
+      <section className="closing-section"><div className="wrap closing-inner"><p className="eyebrow text-ivory/65">Residential &amp; Commercial Interiors</p><h2 className="mt-6 max-w-3xl text-5xl sm:text-7xl">Let&apos;s make room for what matters.</h2><p className="mt-5 max-w-xl leading-7 text-ivory/70">Tell us what you are planning and we&apos;ll start with a conversation.</p><div className="mt-9"><Button href="/contact" variant="light">Get in touch <ArrowUpRight size={15} aria-hidden /></Button></div></div></section>
     </>
   );
 }

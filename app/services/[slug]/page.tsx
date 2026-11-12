@@ -29,10 +29,10 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
   return (
     <article>
       <section className="wrap service-detail-hero">
-        <Link href="/#services" className="service-back-link"><ArrowLeft size={14} aria-hidden /> All services</Link>
+        <Link href="/services" className="service-back-link"><ArrowLeft size={14} aria-hidden /> All services</Link>
         <div className="service-detail-intro">
           <div className="service-detail-copy">
-            <p className="eyebrow">Lakes Interiors · Maryland, Lagos</p>
+            <p className="eyebrow">Residential &amp; Commercial Interiors</p>
             <h1 className="mt-5 text-5xl sm:text-6xl">{service.title}<span className="service-title-dot">.</span></h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-charcoal/75">{service.detail}</p>
             <div className="mt-8"><Button href={`/contact?service=${encodeURIComponent(service.title)}`}>Enquire about this service <ArrowRight size={15} aria-hidden /></Button></div>
