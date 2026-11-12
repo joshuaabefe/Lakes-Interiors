@@ -16,7 +16,7 @@ export const waLink = (msg = "Hello Lakes Interiors, I'd like to discuss a proje
 
 export const nav = [
   { label: "Projects", href: "/projects" },
-  { label: "Services", href: "/#services" },
+  { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
 ];
 

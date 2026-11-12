@@ -102,6 +102,9 @@
 .projects-intro-image > div { position: relative; z-index: 1; }
 .projects-image-label { position: absolute; z-index: 2; right: 1.5rem; bottom: 1.5rem; background: #292b25; padding: .75rem 1rem; color: #f6f3ed; font-size: 9px; letter-spacing: .16em; text-transform: uppercase; }
 .projects-featured-card .group > div:first-child { overflow: hidden; }
+.service-index-card > div { transition: transform .7s cubic-bezier(.2,.7,.25,1); }
+.group:hover .service-index-card > div { transform: scale(1.035); }
+.service-index-number { position: absolute; right: 1rem; bottom: 1rem; display: grid; width: 2.5rem; height: 2.5rem; place-items: center; border: 1px solid rgb(246 243 237 / 75%); border-radius: 50%; background: rgb(32 33 31 / 70%); color: #fff; font-size: .7rem; letter-spacing: .12em; }
 .project-detail-hero { position: relative; }
 .project-detail-index { position: absolute; right: 1rem; bottom: 1rem; background: #292b25; padding: .65rem .85rem; color: #f6f3ed; font-size: 10px; letter-spacing: .16em; }
 .project-gallery-section { background: #ebe5d9; padding: 4rem 0; }
