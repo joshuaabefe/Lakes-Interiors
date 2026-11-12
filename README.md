@@ -12,6 +12,7 @@ Next.js 14 (App Router) · TypeScript · Tailwind · Lucide.
 - Each service row opens a dedicated page with a hero photo, nine gallery photos, and an enquiry link.
 - The site includes a complete set of project pages, image galleries, service pages, and enquiry flows. Project photography currently uses Unsplash images; replace the image paths in `data/site.ts` with Lakes Interiors photos when they are ready.
 - Phone and WhatsApp settings live in `data/site.ts`; email and WhatsApp are currently configured there.
+- Contact form submissions are sent to the business email in `data/site.ts` through Resend. Set `RESEND_API_KEY` and a verified `RESEND_FROM_EMAIL` in `.env.local` for local development and in the production host's environment settings. Never commit the API key. The WhatsApp link is a separate contact route and does not receive form contents.
 - Privacy and terms are linked in the footer. Review them whenever the business, hosting, analytics, or enquiry process changes.
 - Before launch, confirm the operator's registered legal name and service address, add a privacy contact channel, and document the hosting provider, security cookies, log retention, and data locations. Recheck whether any non-essential analytics or embeds have been added; obtain consent before loading them.
 - Confirm the studio has rights to its logo, copy, and any photos showing recognizable art, brands, or people. Unsplash's license does not itself grant separate rights to those elements.
