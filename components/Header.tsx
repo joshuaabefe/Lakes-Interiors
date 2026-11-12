@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header className={`sticky top-0 z-40 border-b transition-colors duration-200 ${scrolled || open ? "border-charcoal/10 bg-ivory" : "border-transparent bg-ivory/95"}`}>
       <div className="wrap flex h-[76px] items-center justify-between">
-        <Link href="/" className="brand-mark" aria-label="Lakes Interiors home"><span className="brand-monogram" aria-hidden="true"><Image src="/lakes-interiors-house-mark.png" alt="" width={28} height={30} priority /></span><span className="brand-name">Lakes Interiors<small>Interior design studio</small></span></Link>
+        <Link href="/" className="brand-mark" aria-label="Lakes Interiors Design Studio home"><span className="brand-monogram" aria-hidden="true"><Image src="/lakes-interiors-house-mark.png" alt="" width={28} height={30} priority /></span><span className="brand-name">Lakes Interiors<small>Design Studio</small></span></Link>
         <nav aria-label="Main" className="hidden items-center gap-9 text-[13px] md:flex">
           {nav.map(n => <Link key={n.href} href={n.href} className="nav-link hover:text-[#806832]">{n.label}</Link>)}
           <Link href="/contact" className="header-cta">Let&apos;s talk <span aria-hidden>↗</span></Link>
